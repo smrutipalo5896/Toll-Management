@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+ {% load static %}
+  <p><b>WELCOME {{user.username}}</b></p>
+
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<div class="container">
+ <h3>Fill Up</h3>
+   <form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="Submit" onclick="index.html">Submit</button>
+   </form>
+</div> 
+
+
+<a href='/accounts/logout/'>SIGNOUT</a>

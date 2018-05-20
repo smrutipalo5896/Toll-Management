@@ -1,0 +1,49 @@
+from django.shortcuts import render,redirect
+from django.views.generic import TemplateView
+from django.http import HttpResponse
+from django.contrib.auth.decorators  import login_required
+from profiles.forms import HomeForm
+from profiles.models import Post
+from django.utils.decorators import method_decorator
+
+    
+    
+def homee(request):
+    return  render(request,'homepage.html')
+
+
+
+def aboutsm(request):
+    return  render(request,'about.html')
+
+def faqsm(request):
+    return  render(request,'faq.html')
+
+
+@method_decorator(login_required, name='dispatch')
+class userProfile(TemplateView):
+    template='profile.html'
+
+    def get(self,request):
+        form=HomeForm()
+        posts=Post.objects.all()
+        print(posts)
+        args={'form':form,'posts':posts}
+        return render(request,self.template,args)
+    
+    def post(self,request):
+        form=HomeForm(request.POST)
+        if form.is_valid():
+            post=form.save(commit=False)
+            post.user=request.user
+            post.save()
+            
+            text=form.cleaned_data['first'] 
+            form=HomeForm()  
+            return redirect('http://127.0.0.1:8000/emp/')
+            
+           
+        args={'form':form,'text':text}
+        return render(request,self.template,args)  
+        
+        

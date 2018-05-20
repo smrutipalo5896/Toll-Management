@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<h1> user </h1>
+   <ul>
+    {% for e in empss %}
+    <li><a href="/emp/{{e.id}}/">{{e.employeename}}</a></li>
+     {% endfor %}
+   </ul>
+

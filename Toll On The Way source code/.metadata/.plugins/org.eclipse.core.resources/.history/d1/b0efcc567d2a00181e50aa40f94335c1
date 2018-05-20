@@ -1,0 +1,13 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+from .models import employdetails
+
+def index(request):
+    empss= employdetails.objects.all()
+    context={'empss':empss} 
+    return render(request,'emp/index.html',context)
+   
+
+
+def detail(request,employeeId):
+    return HttpResponse("<h3> fkdgd</h3>")

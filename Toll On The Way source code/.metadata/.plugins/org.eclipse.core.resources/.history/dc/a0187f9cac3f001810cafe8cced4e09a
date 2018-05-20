@@ -1,0 +1,9 @@
+body{
+ 
+   background-size:cover;
+   background-size:100%;
+   
+}
+.palki{
+    allign:center;
+    }

@@ -1,0 +1,210 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="http://127.0.0.1:8000/about/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
+  <a href="http://127.0.0.1:8000/contact/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="http://127.0.0.1:8000/FAQ/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">FAQs</a>
+  <a href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login As ADMIN?</a>
+ 
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ 
+</div>
+</div>
+<pre>
+
+
+</pre>
+<style>
+body{
+ background-color: grey;
+ }
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #1b70de; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+.faq {
+    text-align: center;
+       color:aliceblue;
+       font-family:"Georgia";
+       font-size:35px;
+       }
+</style>
+
+<div class="faq">
+<h2><i>Frequently Asked Questions</i></h2>
+</div>
+<button class="accordion">1.Is there any discount / cashback on Toll payments using TOW?</button>
+<div class="panel">
+  <p>You can avail cashback of 5% on all Toll payments at the national highways only, using FASTag in FY 2018-19. The cashback amount for a particular month will be credited back to your FASTag account in the subsequent month, post receiving the funds from Indian Highway Management Company Limited (IHMCL).</p>
+</div>
+
+<button class="accordion">2.What are the charges for different vehicles?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<button class="accordion">3.How would I cross toll plaza, if the server is not working?</button>
+<div class="panel">
+  <p> In case server is not working and your FASTag account is having sufficient balance, please pay the toll fee in cash at the plaza. Additionally, please call our customer care and also report the issue with the concessionaire.</p> 
+</div>
+
+
+<button class="accordion">4.How do I generate/ reset my username and password?</button>
+<div class="panel">
+  <p>Once your FASTag account is created, please login to the customer portal and register yourself to generate your User ID and Password. Please enter the required information in the prompts and the system will send an SMS with your login details to your registered mobile number. You may call our toll-free Customer Care on 1860-267-0104 for assistance.
+</p> </div>
+
+
+<button class="accordion">5.Can I avail a monthly pass through Toll ON The Way?</button>
+<div class="panel">
+  <p>The monthly pass facility is specific to each toll plaza. You may call our Toll Free customer care @ 1800 2100 104 to check the details (chargeable number : 1860-267-0104)</p> 
+</div>
+
+
+<button class="accordion">6.I have two vehicles, can I use one Faccount for two vehicles?</button>
+<div class="panel">
+  <p>yes. You can use same user account for the two vehicles.</p> 
+</div>
+
+
+<button class="accordion">7.Why the user fee (toll) rate is different at 2 Toll Plazas?</button>
+<div class="panel">
+  <p>User fee on a particular fee plaza is based on stretch length under that plaza, structures (bridge, tunnel, bypass) and width of the highways, applicable fee rules and provisions of the concessions agreement.</p> 
+ </div>
+
+
+<button class="accordion">8.What are the documents needed to register in TOW?</button>
+<div class="panel">
+  <p>you will need to carry original as well as copy of your KYC document<br />
+You need to submit the following documents along with the application for FASTag:<br />
+
+Registration Certificate (RC) of the vehicle.<br />
+Passport size photograph of the vehicle owner<br />
+KYC documents as per the category of the vehicle owner:<br />
+Our representative will provide you an application form, which you need fill and submit.<br />
+
+All required documents for FASTag should be in the name of the owner of the vehicle. If car owner is not present at the time of application, driver will need to submit his photo ID proof.<br />
+
+A valid driving license would be sufficient for Address & ID proof.<br /></p> 
+</div>
+
+
+<button class="accordion">9.Can TOW be used for passage through toll plazas on the state highways?</button>
+<div class="panel">
+  <p>
+TOW can be used on all toll plazas where it has been implemented.</p>
+    
+</div>
+
+<button class="accordion">10.What are the benefits of using TOW?</button>
+<div class="panel">
+  <p>Ease of payment – No need to carry cash for the toll transactions, saves time<br />
+Online Recharge – Tag can be recharged online through Credit Card / Debit Card / UPI / NEFT/ RTGS or Net banking<br />
+SMS alerts for toll transactions, low balance, etc.<br />
+Online Portal for customers<br />
+Validity of 5 Years</p> </div>
+
+
+<button class="accordion">11.Do I need to use any specific lane at the toll plaza for TOW?</button>
+<div class="panel">
+  <p>Yes, you will have to use the lanes demarcated for FASTag.</p> 
+ </div>
+
+
+<button class="accordion">12.In case of Harassment/ misconduct/ discourteous/ rude behaviour of toll collection staff, what should we do?</button>
+<div class="panel">
+  <p>In case of such a scenario, a complaint is to be lodged with respective Project Directors at the toll plaza.</p> 
+</div>
+
+
+<button class="accordion">13.Why full user fee (toll) is to be paid although we travel a small length on the project road?</button>
+<div class="panel">
+  <p>In India, the tolling is generally under the open system, whereby fee payable is a fixed amount based on the length of stretch under one project which is normally 60 kilometers. If a stretch is of lesser length, user fee of actual length only is collected.</p>  
+</div>
+
+
+<button class="accordion">14.What is TOW?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<button class="accordion">15.What is normal minimum distance between two adjacent Toll Plazas?</button>
+<div class="panel">
+  <p>As per the fee rules 2008, the spacing between two adjacent toll plazas should be 60 km.</p>
+</div>
+
+<button class="accordion">16.Why are the toll rates different for different vehicle categories?</button>
+<div class="panel">
+  <p>Vehicles are categorized for the welfare of road users. This categorization is primarily based on the size and load they carry and damage done to the road and type of use (commercial/personnel) of a vehicle.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="#" target="_blank">Toll On The Way</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+   
+     <center>&copy; 2020 Toll On The Way Website &nbsp; Design by  <a href="home.html"><i>tollontheway</i></a></center>
+  </div>
+</footer>
+</html>
+

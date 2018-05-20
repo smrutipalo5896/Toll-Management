@@ -1,0 +1,17 @@
+from django.http import HttpResponse
+from django.template import loader
+from .models import employdetails
+
+def index(request):
+    empss= employdetails.objects.all()
+    template=loader.get_template('emp/index.html')
+    context={
+        'empss':empss,
+        }
+   
+    return HttpResponse(template.render(context,request))
+   
+
+
+def detail(request,employeeId):
+    return HttpResponse("<h3> fkdgd</h3>")

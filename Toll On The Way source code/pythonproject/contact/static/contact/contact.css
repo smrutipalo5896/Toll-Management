@@ -1,0 +1,29 @@
+body{
+ background:white
+   url("images/1.png")no-repeat;
+   background-size:cover;
+   background-size:100%;
+   background-color: grey;
+   
+}
+.test{
+       text-align: center;
+       color:aliceblue;
+       font-family:"Georgia";
+       font-size:35px;
+       line-height:50px;
+       text-emphasis: right;
+    }
+.button {
+    background-color: aliceblue; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}

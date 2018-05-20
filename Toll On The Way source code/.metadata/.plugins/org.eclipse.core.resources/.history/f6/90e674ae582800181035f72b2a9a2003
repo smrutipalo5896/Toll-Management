@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+{% block title %}{{ title }} | we are coders{% endblock %}
+{% block extrastyle %}
+<link rel ='stylesheet' href='{% static"/css/base.css"%'/>
+<style type="text/css">
+ #header{
+  background-color:#058BCC;
+  color:#cfcc72
+  }
+  .module h2, .module caption,.inline-group h2{
+  font-size:26px;
+  background:#1f344b;
+  }
+  
+  branding h1{
+  color:#6f1616;
+  font-family:sans-serif;
+  }
+branding h2{
+  color:#ca1f1f;
+  font-family:sans-serif;
+  }
+  a:link{
+  color:#8d364a;
+  }
+  td,th{
+   color:#8d364a;
+   font-size:25px;
+   font-family:times;
+  }
+.login #container{
+    background-color:#ca1f1f;
+ }
+body.login{
+background:#ca1f1f;
+  }
+  
+</style>
+{% endblock %} 
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">admin SMRUTI</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

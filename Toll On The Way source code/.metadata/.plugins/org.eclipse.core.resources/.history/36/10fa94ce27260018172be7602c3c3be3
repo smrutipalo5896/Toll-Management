@@ -1,0 +1,16 @@
+from django.db import models
+
+class employdetails(models.Model):
+    employeename=models.CharField(max_length=250)
+    address=models.CharField(max_length=250)
+    employeeID=models.CharField(max_length=250)
+    adharnumber=models.CharField(max_length=250)
+    
+    def _str_(self):
+        return self.employeename + '-' + self.address
+    
+    
+class place(models.Model):
+    lane=models.ForeignKey(employdetails,on_delete=models.CASCADE)
+    lanenumber=models.CharField(max_length=250)
+       

@@ -1,0 +1,14 @@
+from django import forms
+from profiles.models import Post
+
+ways=[('1way','1way'),('2way','2way')]
+class HomeForm(forms.ModelForm):
+    post=forms.CharField()
+    last=forms.CharField()
+    vehicleno=forms.CharField()
+    vehicletype=forms.CharField(widget=forms.Select(choices=ways))
+    ways=[('1way','1way'),('2way','2way')]
+    class Meta:
+        model=Post
+        fields=('post','last','vehicleno','vehicletype','journey_type')
+   

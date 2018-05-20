@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+{% block title %}{{ title }} | we are coders{% endblock %}
+{% block extrastyle %}
+<link rel ='stylesheet' href='{% static"/css/base.css"%'/>
+<style type="text/css">
+ #header{
+  background-color:#058BCC;
+  color:#cfcc72
+  }
+  .module h2, .module caption,.inline-group h2{
+  font-size:26px;
+  background:#1f344b;
+  }
+  
+  branding h1{
+  color:#6f1616;
+  font-family:sans-serif;
+  }
+  a:link{
+  color:#8d364a;
+  }
+  td,th{
+   color:#8d364a;
+   font-size:25px;
+   font-family:times;
+  }
+.login #container{
+    background-color:#ca1f1f;
+ }
+ .login #header h1 a{
+ font-weight:bold;
+ color:#5c2e2ef7;
+ text-shadow:2px 0 #ca1f1f
+ }
+</style>
+{% endblock %} 
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">ADMIN P N Ps</a></h1>
+<style>
+.object-tools a.addlink{
+ background-color:#ca1f1f;
+}
+h1{
+color:#a25f5f;
+}
+#changelist-filter{
+background:#644b4b70;
+}
+.module p, .module ul, .module h3, .module h4, .module dl, .module pre{
+}
+.dashboard .module table td a{
+font-size:10px;
+color:#5a5153;
+}
+#content-related{
+background:#644b4b
+}
+#content-related .module{
+background:#b62e2e;
+}
+#container{
+background:#0a0b41e0;
+color:#8d364a;
+}
+.dashboard #content{
+background:#0a0b41e0;
+color:#8d364a;
+}
+body.login{
+background:#0a0b41e0;
+color:#8d364a;
+  }
+.login #container{
+    background-color:#871d39bd;
+ }
+ .login .form-row label{
+ color:#66ad1b;
+ }
+ }
+  </style>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

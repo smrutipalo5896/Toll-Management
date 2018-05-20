@@ -1,0 +1,40 @@
+body{
+    height:1024px;
+     background :blue;
+   
+    background-size:cover;
+    background-size:100%;
+}
+.header{
+    color:firebrick;
+    padding:20px 30px 20px 30px;
+    font-size:24px;
+    text-decoration: none;
+    background-color:aliceblue;
+}
+.main{
+    margin: 0 0 0 180px;
+    padding:35px 40px 30px 200px;
+    font-family:"Georgia";
+    line-height:19px;
+    text-emphasis: center;
+    color:aliceblue;
+}
+.container{
+    height:1024px;
+}
+.log {
+ padding right: 150px;
+}
+.log :hover{
+    color:blue;
+
+}
+footer{
+     background:lightgray;
+    padding:6px 40px 6px 40px;
+    font-family:"Lucida Sans Unicode";
+    color:#444444;
+    font-size:11px;
+    text-decoration: right;
+}

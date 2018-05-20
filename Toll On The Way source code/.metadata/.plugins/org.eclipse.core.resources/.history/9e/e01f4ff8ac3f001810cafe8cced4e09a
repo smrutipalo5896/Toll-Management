@@ -1,0 +1,9 @@
+body{
+ 
+   background-size:cover;
+   background-size:100%;
+   
+}
+.palki{
+    padding:0px 0px 3000px 120px;
+    }

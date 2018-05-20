@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="about.html/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
+  <a href="contact.html/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="faqs.html/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">FAQs</a>
+  <a href="admin/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login As ADMIN?</a>
+ 
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ <pre>
+ 
+</pre>
+   <header class="header">
+    
+        <a><b><strong><center>TOLL ON THE WAY</center></strong></b></a>
+    </header>
+ </div>
+    </div>
+   
+    
+    
+   
+
+    
+{% load static %}
+<link rel="stylesheet" href="{% static 'profiles/home.css' %}" type="text/css" >
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>HOME</title>{% endblock %}
+  
+    <script src="js/scripts.js"></script>
+    {% load static %}
+   
+
+
+
+<div class="container">
+   
+        
+<pre>
+
+
+
+</pre>
+<div class="indexBanner">
+<video loop="" muted="" autoplay="" class="fullscreen-bg__video" __idm_id__="191203329">
+<source src="{% static "profile/images/vid.mp4" %}" style="overflow: hidden;position: relative;text-align: center;"type="video/mp4">
+</video></div>
+
+</div>
+
+
+<div class="tests">
+<form class="login" method="POST" action="/accounts/login/">
+{% csrf_token %}
+  <p><label for="id_login">Login:</label> <input autofocus="autofocus" id="id_login" name="login" placeholder="Username or e-mail" type="text"></p>
+<p><label for="id_password">Password:</label> <input id="id_password" name="password" placeholder="Password" type="password"></p>
+<p><label for="id_remember">Remember Me:</label> <input id="id_remember" name="remember" type="checkbox"></p>
+  
+  <a class="button secondaryAction" href="/accounts/password/reset/">Forgot Password?</a>
+  <a class="button secondaryAction" href="{% url 'account_signup' %}">Sign up</a>
+  <button class="primaryAction" type="submit">Sign In</button>
+</form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="#" target="_blank">Toll On The Way</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    <pre>
+    
+    </pre>
+     <center>&copy; 2020 Toll On The Way Website &nbsp; Design by  <a href="home.html"><i>tollontheway</i></a></center>
+  </div>
+</footer>
+</html>

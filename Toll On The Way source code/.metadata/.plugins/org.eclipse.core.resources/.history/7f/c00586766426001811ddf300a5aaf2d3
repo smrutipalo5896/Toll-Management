@@ -1,0 +1,9 @@
+{% if empss %}
+   <ul>
+    {% for e in empss %}
+    <li><a href="/emp/{{e.id}}/">{{e.employeeID}}</a></li>
+     {% endfor %}
+   </ul>
+{% else %}
+  <h3>no employee</h3>  
+{% endif %} 

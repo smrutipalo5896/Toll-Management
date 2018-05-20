@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'emp/user.css' %}" type="text/css">
+
+<title>USER</title>
+<link rel="stylesheet" href="../css/user.css">
+
+    
+<hr>
+<div class="container">
+            
+<form>
+<header class="header">
+<a><i><bold><center>TOLL FORM</center></bold></i></a>
+</header>
+
+<br>
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="main">
+             <label for="Time"><b>Time</b></label>
+              <input id="time" type="time">
+            <br>
+             <br>
+            <label for="Date"><b>Date </b></label>
+             <input id="date" type="date">  
+            <br>
+             <p><b>Journey Type: </b><select id="Journey Type">
+				<option value="empty">Select Journey type</option>
+				<option value="Single Journey">Single Journey</option>
+				<option value="Return Journey">Return Journey</option>
+				<option value="Monthly Pass">Monthly Pass</option>
+                </select></p>
+            <label for="vno"><b>Vehicle Number </b></label>
+             <input type="text" placeholder="Enter Vehicle Number" name="vno" required> 
+            <p><b>Vehicle Type: </b><select id="Vehicle type">
+				<option value="empty">Select a Vehicle type</option>
+				<option value="Light motor Vehicle">Car/Jeep/Van/Light motor Vehicle</option>
+				<option value="Light commercial Vehicle">Light commercial/good Vehicle/Mini bus</option>
+				<option value="Truck">Bus/Truck</option>
+                <option value="Heavy Construction Machinery">HCM/EME/MAV</option>
+                <option value="Oversized Vehicle">Oversized Vehicle</option>
+                </select></p>
+           
+            <label for="charge"><b>Charge </b></label>
+             <input type="text"  name="charge" required>
+           <br>
+            <br>
+             <div class="log">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" value="Payment">
+            </div>
+        </div>
+</form>
+        </div>
+</html>
+    
+       
+        

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+ <link rel="stylesheet" href="{% static 'profiles/sty.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'profiles/home.css' %}" type="text/css">
+<h2><strong><center>TOLL ON THE WAY</center></strong></h2>
+
+
+<nav class="menu">
+            &nbsp;&nbsp;<a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class='active' href="/about/">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/contact/">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/FAQ/">FAQs</a>
+</nav>
+
+
+
+
+
+
+{% if request.user.is_authenticated %}
+<h3>Hello {{ request.user }}</h3>
+{% else %}
+<form class="login" method="POST" action="/accounts/login/">
+{% csrf_token %}
+  <p><label for="id_login">Login:</label> <input autofocus="autofocus" id="id_login" name="login" placeholder="Username or e-mail" type="text"></p>
+<p><label for="id_password">Password:</label> <input id="id_password" name="password" placeholder="Password" type="password"></p>
+<p><label for="id_remember">Remember Me:</label> <input id="id_remember" name="remember" type="checkbox"></p>
+  
+  <a class="button secondaryAction" href="/accounts/password/reset/">Forgot Password?</a>
+  <a class="button secondaryAction" href="{% url 'account_signup' %}">Sign up</a>
+  <button class="primaryAction" type="submit">Sign In</button>
+</form>
+{% endif %}
+<a href='/admin/'>ADMIN</a>

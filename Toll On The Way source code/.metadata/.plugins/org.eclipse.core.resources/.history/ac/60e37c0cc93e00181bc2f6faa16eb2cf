@@ -1,0 +1,60 @@
+body{
+ background-color:grey;
+   background-size:cover;
+   background-size:100%;
+   
+}
+.indexBanner {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.header{
+    color: black;
+    padding:10px 30px 10px 30px;
+    font-size:40px;
+    text-decoration: none;
+    background-color:aliceblue;
+    font-family:"Arial Narrow";
+    font-weight:normal;
+}
+
+
+}
+.container{
+    height:1024px;
+}
+.side {
+    float:left;
+    width:120px;
+    padding: 30px 0 0 40px;
+    margin:0px;
+    color:black;
+    font-size:24px;
+    font-family:"Arial Narrow";
+    font-weight:normal;
+}
+.new{
+    color:aliceblue;
+    padding-left: 200px;
+}
+.new a{
+    color:yellow;
+    text-decoration: none;
+}
+.new a:hover{
+    color:aqua;
+}
+.text {
+    margin: 0 0 0 180px;
+    padding;35px 40px 30px 40px;
+    font-family:"Georgia";
+    line-height:19px;
+    text-emphasis: right;
+    text-align: center;
+    color:aliceblue;
+}
+.log :hover{
+    color:blue;
+}

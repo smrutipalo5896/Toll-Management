@@ -1,0 +1,12 @@
+from django.http import HttpResponse
+
+def index(request):
+    empss=employdetails.objects.all()
+    for em in empss:
+        url='/emp/' + str(em.employeeId) + '/'
+        html+='<a href="'+url+'">'+ em.employname+'<a/><br>'
+    return HttpResponse(html)
+   
+
+def detail(request,employeeId):
+    return HttpResponse("<h3> fkdgd</h3>")

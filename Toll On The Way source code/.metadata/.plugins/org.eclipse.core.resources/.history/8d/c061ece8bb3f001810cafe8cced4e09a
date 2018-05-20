@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title> TOLLGATE</title>
+ {% load static %}
+ <link rel="stylesheet" href="{% static 'emp/style.css' %}" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+
+<center><h2>User Fee</h2></center>
+
+<table align="center">
+  <tr>
+    <th>Type Of Vehichle</th>
+    <th>Single Journey(Rs.)</th>
+    <th>Return Journey(Rs.)</th>
+    <th>Monthly Pass(Rs.)</th>
+  </tr>
+  <tr>
+    <td>Car,Jeep,Van or Light Motor Vehicle</td>
+    <td>90</td>
+    <td>135</td>
+    <td>3010</td>
+  </tr>
+  <tr>
+    <td>Light Commercial Vehicle,Light Good Vehicle</td>
+    <td>145</td>
+    <td>215</td>
+    <td>4780</td>
+  </tr>
+  <tr>
+    <td>Bus/Truck</td>
+    <td>295</td>
+    <td>445</td>
+    <td>9915</td>
+  </tr>
+  <tr>
+    <td>HCM,EME,MAV(3 to 6 axles)</td>
+    <td>460</td>
+    <td>690</td>
+    <td>15370</td>
+  </tr>
+  <tr>
+    <td>Oversized Vehichles(7 or more axles)</td>
+    <td>575</td>
+    <td>860</td>
+    <td>19125</td>
+  </tr>
+</table>
+
+<pre>
+
+</pre>
+<div class="palki">
+<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2DNEBZV24MB82">
+<table>
+<tr><td><input type="hidden" name="on0" value="charge">charge</td></tr><tr><td><select name="os0">
+    <option value="2 wheeler">2 wheeler $50.00 USD</option>
+    <option value="4 wheeler">4 wheeler $120.00 USD</option>
+    <option value="cycle">cycle $20.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+
+
+</html>
